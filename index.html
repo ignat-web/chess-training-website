@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta charset="UTF-8">
+    <title>Энциклопедия шахматных дебютов</title>
+    <link rel="stylesheet" href="https://unpkg.com@chrisoakman/chessboard2@0.5.0/dist/chessboard2.min.css">
+    <script src="https://unpkg.com@chrisoakman/chessboard2@0.5.0/dist/chessboard2.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.10.3/chess.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>📚 Энциклопедия шахматных дебютов</h1>
+            <p class="subtitle">Изучай, кликай, тренируйся. Выбери дебют для изучения:</p>
+        </header>
+
+        <main>
+
+            <section class="debute-map" id="debuteMap">
+                <h2>Основные дебюты</h2>
+                <div class="debute-grid">
+
+                    <div class="debute-card" data-debute-id="italian">
+                        <div class="debute-icon">♞</div>
+                        <h3>Итальянская партия</h3>
+                        <p>1.e4 e5 2.Kf3 Kc6 3.Cc4</p>
+                        <span class="tag">Открытые дебюты</span>
+                    </div>
+
+
+                    <div class="debute-card" data-debute-id="sicilian">
+                        <div class="debute-icon">⚔️</div>
+                        <h3>Сицилианская защита</h3>
+                        <p>1.e4 c5</p>
+                        <span class="tag">Полуоткрытые</span>
+                    </div>
+
+
+                    <div class="debute-card" data-debute-id="queens_gambit">
+                        <div class="debute-icon">♛</div>
+                        <h3>Ферзевый гамбит</h3>
+                        <p>1.d4 d5 2.c4</p>
+                        <span class="tag">Закрытые дебюты</span>
+                    </div>
+
+
+                    <div class="debute-card" data-debute-id="caro_kann">
+                        <div class="debute-icon">🛡️</div>
+                        <h3>Защита Каро-Канн</h3>
+                        <p>1.e4 c6</p>
+                        <span class="tag">Полуоткрытые</span>
+                    </div>
+
+
+                    <div class="debute-card" data-debute-id="scandinavian">
+                        <div class="debute-icon">⚓</div>
+                        <h3>Скандинавская защита</h3>
+                        <p>1.e4 d5</p>
+                        <span class="tag">Полуоткрытые</span>
+                    </div>
+
+
+                    <div class="debute-card" data-debute-id="english">
+                        <div class="debute-icon">☕</div>
+                        <h3>Английское начало</h3>
+                        <p>1.c4</p>
+                        <span class="tag">Фланговые</span>
+                    </div>
+
+
+                    <div class="debute-card" data-debute-id="birds">
+                        <div class="debute-icon">♟️</div>
+                        <h3>Дебют Берда</h3>
+                        <p>1.f4</p>
+                        <span class="tag">Полуоткрытые</span>
+                    </div>
+
+
+                    <div class="debute-card" data-debute-id="ruy_lopez">
+                        <div class="debute-icon">🍷</div>
+                        <h3>Испанская партия</h3>
+                        <p>1.e4 e5 2.Kf3 Kc6 3.Cb5</p>
+                        <span class="tag">Открытые дебюты</span>
+                    </div>
+
+
+                    <div class="debute-card" data-debute-id="french">
+                        <div class="debute-icon">🥖</div>
+                        <h3>Французская защита</h3>
+                        <p>1.e4 e6</p>
+                        <span class="tag">Полуоткрытые</span>
+                    </div>
+
+
+                    <div class="debute-card" data-debute-id="nimzo_indian">
+                        <div class="debute-icon">🎩</div>
+                        <h3>Защита Нимцовича</h3>
+                        <p>1.d4 Kf6 2.c4 e6 3.Kc3 Cb4</p>
+                        <span class="tag">Закрытые</span>
+                    </div>
+
+
+                    <div class="debute-card" data-debute-id="dutch">
+                        <div class="debute-icon">🌷</div>
+                        <h3>Голландская защита</h3>
+                        <p>1.d4 f5</p>
+                        <span class="tag">Полуоткрытые</span>
+                    </div>
+
+
+                    <div class="debute-card" data-debute-id="alekhine">
+                        <div class="debute-icon">🎯</div>
+                        <h3>Защита Алехина</h3>
+                        <p>1.e4 Kf6</p>
+                        <span class="tag">Полуоткрытые</span>
+                    </div>
+
+
+                    <div class="debute-card" data-debute-id="kings_indian">
+                        <div class="debute-icon">🕌</div>
+                        <h3>Староиндийская защита</h3>
+                        <p>1.d4 Kf6 2.c4 g6 3.Kc3 Cg7</p>
+                        <span class="tag">Закрытые</span>
+                    </div>
+
+                    <div class="debute-card" data-debute-id="grunfeld">
+                        <div class="debute-icon">💎</div>
+                        <h3>Защита Грюнфельда</h3>
+                        <p>1.d4 Kf6 2.c4 g6 3.Kc3 d5</p>
+                        <span class="tag">Закрытые</span>
+                    </div>
+
+                    <div class="debute-card" data-debute-id="vienna">
+                        <div class="debute-icon">🎻</div>
+                        <h3>Венская партия</h3>
+                        <p>1.e4 e5 2.Kc3</p>
+                        <span class="tag">Открытые</span>
+                    </div>
+
+                    <div class="debute-card" data-debute-id="scotch">
+                        <div class="debute-icon">⚔️</div>
+                        <h3>Шотландская партия</h3>
+                        <p>1.e4 e5 2.Kf3 Kc6 3.d4</p>
+                        <span class="tag">Открытые</span>
+                    </div>
+            </section>
+
+
+            <section class="study-area" id="studyArea" style="display: none;">
+                <div class="study-header">
+                    <button id="backToMapBtn" class="back-btn">← Назад ко всем дебютам</button>
+                    <h2 id="studyTitle"></h2>
+                </div>
+
+                <div class="study-content">
+
+                    <div class="info-column">
+
+                        <div class="info-card">
+                            <h3>📖 О дебюте</h3>
+                            <p id="debuteDescription"></p>
+                            <div class="info-grid">
+                                <div class="info-item">
+                                    <strong>Первые ходы:</strong>
+                                    <div class="moves-display" id="debuteMoves"></div>
+                                </div>
+                                <div class="info-item">
+                                    <strong>Тип:</strong>
+                                    <span id="debuteType"></span>
+                                </div>
+                                <div class="info-item">
+                                    <strong>Сложность:</strong>
+                                    <span id="debuteDifficulty"></span>
+                                </div>
+                                <div class="info-item">
+                                    <strong>Популярность:</strong>
+                                    <span id="debutePopularity"></span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="info-card">
+                            <h3>📜 История и происхождение</h3>
+                            <p id="debuteHistory"></p>
+                        </div>
+
+
+                        <div class="info-card">
+                            <h3>🎯 Стратегические идеи</h3>
+                            <div id="debuteIdeas"></div>
+                        </div>
+
+
+                        <div class="info-card">
+                            <h3>🔄 Основные варианты</h3>
+                            <div id="debuteVariations"></div>
+                        </div>
+
+
+                        <div class="info-card">
+                            <h3>🏆 Известные партии</h3>
+                            <div id="famousGames"></div>
+                        </div>
+
+
+                        <div class="info-card">
+                            <h3>💡 Советы по игре</h3>
+                            <div id="debuteTips"></div>
+                        </div>
+                    </div>
+
+
+                    <div class="board-column">
+
+                        <div class="board-card">
+                            <h3>♟️ Интерактивная доска</h3>
+                            <div id="board"></div>
+                            <div class="board-controls">
+                                <button id="prevMoveBtn">← Назад</button>
+                                <button id="resetBtn">С начала</button>
+                                <button id="nextMoveBtn">Вперед →</button>
+                                <div class="move-counter">
+                                    Ход: <span id="currentMove">0</span>/<span id="totalMoves">0</span>
+                                </div>
+                            </div>
+                            <div class="training-section">
+                                <button id="trainBtn" class="train-btn">💪 Начать тренировку</button>
+                                <div class="training-tip" id="trainingTip" style="display: none;">
+                                    <p><strong>Режим тренировки активирован!</strong></p>
+                                    <p>Попробуйте воспроизвести ходы дебюта. При ошибке вы получите подсказку.</p>
+                                    <button id="stopTrainBtn">Закончить тренировку</button>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="info-card">
+                            <h3>🎥 Видеоурок</h3>
+                            <div id="videoContainer"></div>
+                        </div>
+
+
+                        <div class="info-card">
+                            <h3>🔗 Похожие дебюты</h3>
+                            <div id="relatedDebutes"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>Энциклопедия шахматных дебютов • Используется chess.js и chessboard2</p>
+        </footer>
+    </div>
+
+    <script src="script.js">
+
+
+    </script>
+
+</body>
+
+</html>
